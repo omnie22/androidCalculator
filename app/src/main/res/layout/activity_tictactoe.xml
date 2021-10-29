@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/cell1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cell4"
+        app:layout_constraintEnd_toStartOf="@id/cell2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/cell2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cell4"
+        app:layout_constraintEnd_toStartOf="@id/cell3"
+        app:layout_constraintStart_toEndOf="@id/cell1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/cell3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cell6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cell2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/cell4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cell7"
+        app:layout_constraintEnd_toStartOf="@id/cell5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cell1" />
+
+    <View
+        android:id="@+id/cell5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cell8"
+        app:layout_constraintEnd_toStartOf="@id/cell6"
+        app:layout_constraintStart_toEndOf="@id/cell4"
+        app:layout_constraintTop_toBottomOf="@id/cell2" />
+
+    <View
+        android:id="@+id/cell6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cell9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cell5"
+        app:layout_constraintTop_toBottomOf="@id/cell3" />
+
+    <View
+        android:id="@+id/cell7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cell8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cell4" />
+
+    <View
+        android:id="@+id/cell8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cell9"
+        app:layout_constraintStart_toEndOf="@id/cell7"
+        app:layout_constraintTop_toBottomOf="@id/cell5" />
+
+    <View
+        android:id="@+id/cell9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cell8"
+        app:layout_constraintTop_toBottomOf="@id/cell6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
